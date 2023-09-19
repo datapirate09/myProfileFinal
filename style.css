@@ -1,0 +1,306 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.container-header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #D6E8E4;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /*height: 100vh;*/
+  
+}
+.home-page{
+
+  background: url(./finalBackground.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:0px 0px; 
+}
+.main-page-content{
+  text-align: center;
+}
+#main-heading{
+  font-family: 'PT Serif', serif;
+  font-size: 5rem;
+  padding-bottom: 20px;
+}
+#sub-heading{
+  font-family: 'PT Serif', serif;
+}
+#identity{
+  font-family: 'IBM Plex Serif', serif;
+}
+.grid-container {
+  /*height: 100vh;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.item {
+  font-size: 1rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.About-Me{
+  background:url(./about-page.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:0px 0px; 
+  padding: 20px;
+}
+.mypic {
+  
+  grid-column: span 2;
+  grid-row: span 2;
+}
+#srinath-pic{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.para-about-me {
+  
+  order: 1;
+  /*grid-column: span 2;*/
+  /*grid-column-start: 1;
+  grid-column-end: 3;*/
+  /* TODO: Make the astronaut box look like the goal2 image. */
+
+}
+#title-who{
+  font-size: 5rem;
+}
+#about-info{
+  font-size: 1.5rem;
+}
+@media(min-width: 500px) and (max-width: 1000px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .grid-container{
+      display: block;
+  }
+  .About-Me{
+      background:url(./about-page.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:0px 0px; 
+      padding: 20px;
+      padding-bottom: 100px;
+  } 
+  #srinath-pic{
+      width: 200px;
+      height: 200px;
+  }
+  .my-projects{
+      background-color: rgb(173, 173, 223);
+      /*ikkada 300vh undedi*/
+      padding-bottom: 100px;
+    }
+  .flex-container{
+      padding-top: 100px;
+      gap: 20px;
+  }
+  #title-who{
+    font-size: 2rem;
+  }
+  .para-about-me {
+  
+    order: 1;
+    /*grid-column: span 2;*/
+    /*grid-column-start: 1;
+    grid-column-end: 3;*/
+    /* TODO: Make the astronaut box look like the goal2 image. */
+    
+  }
+  #about-info{
+    font-size: 1.5rem;
+  }
+  #project-heading{
+    text-align: center;
+    color: wheat;
+    font-size: 1rem;
+  }
+  #skills-heading{
+    font-size: 1rem;
+    padding-bottom: 50px;
+  }
+  .my-skills{
+    padding-bottom: 140px;
+  }
+}
+
+
+@media(max-width: 499px){
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .grid-container{
+      display: block;
+  }
+  .About-Me{
+      background:url(./about-page.jpg);
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:0px 0px; 
+      padding: 20px;
+      
+  } 
+  #srinath-pic{
+      width: 150px;
+      height: 150px;
+  }
+  .my-projects{
+      background-color: rgb(173, 173, 223);
+      /*ikkada 250vh undedi height*/
+      padding-bottom: 1000px;
+    }
+    .flex-container{
+      padding-top: 100px;
+      gap: 20px;
+    }
+    #title-who{
+      font-size: 1rem;
+    }
+    .para-about-me {
+  
+      order: 1;
+      /*grid-column: span 2;*/
+      /*grid-column-start: 1;
+      grid-column-end: 3;*/
+      /* TODO: Make the astronaut box look like the goal2 image. */
+      
+    }
+    #about-info{
+      font-size: 1rem;
+    }
+    #main-heading{
+      font-family: 'PT Serif', serif;
+      font-size: 3rem;
+      padding-bottom: 20px;
+    }
+    #project-heading{
+      text-align: center;
+      color: wheat;
+      font-size: 1rem;
+    }
+    #skills-heading{
+      font-size: 1rem;
+      padding-bottom: 100px;
+    }
+    .my-skills{
+      padding-bottom: 200px;
+    }
+}
+
+
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 100px;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+.project-pic{
+  height: 200px;
+  width: 300px;
+}
+.project{
+  text-align: center;
+  color: black;
+  width: 300px;
+  height: 300px;
+}
+.my-projects{
+  background-color: rgb(173, 173, 223);
+  
+}
+#project-heading{
+  text-align: center;
+  color: wheat;
+  font-size: 5rem;
+}
+.flex-container-projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  gap: 30px;
+  padding-top: 100px;
+}
+.skill{
+  text-align: center;
+}
+.skills{
+  padding-top: 40px;
+  text-align: center;
+}
+#skills-heading{
+  font-size: 4rem;
+}
+.my-skills{
+  background-color: #FAF2D3;
+  padding-bottom: 140px;
+  
+}
+.foot-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon{
+  height: 20px;
+  width: 20px;
+}
+.iconic{
+  padding: 20px;
+}
+.footer{
+  background-color: #F1EFEF;
+}
+#mail{
+  justify-self: flex-start;
+  padding-top: 20px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+#head-page{
+  position: sticky;
+top: 0;
+z-index: 999;
+}
